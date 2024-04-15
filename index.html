@@ -3,170 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap5 Sandbox</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <title>My Bootstrap5 Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/36dd899fa5.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-light">
+    <!--nav start-->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-lg">
+          <a class="navbar-brand" href="#">My Portolio</a>
 
- 
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-
+          <div class="dropdown">
+            <button class="btn btn-primary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#home">Home</a></li>
+              <li><a class="dropdown-item" href="#about">About</a></li>
+              <li><a class="dropdown-item" href="#contact">Contact</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
+
         </div>
-      </nav>
+    </nav>
+    <!--nav end-->
 
-      <main>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <!--home start-->
+
+    <section class="home" id="home">
+        <div class="container-lg mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="image text-center">
+                        <img src="img/pexels-andrea-piacquadio-834863.jpg" alt="" class="rounded-circle" width="300">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="text">
+                        <p class="text-muted">Hello world!</p>
+                        <h1 class="fs-4">I'm Kert</h1>
+                        <h2 class="text-primary text-uppercase">A Production Manager</h2>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ab atque ex aliquam quidem suscipit quod eius porro magni aliquid, quo fugit est in repudiandae numquam rerum non neque dolores commodi ipsum voluptates ipsam assumenda.</p>
+                        <a href="" class="btn btn-primary">Contact Me</a>
+                    </div>
+                </div>
+
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/livingroom-max-vakhtbovych-6527069.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/bathroom-monstera-6620861.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/kitchen-cleyder-duque-3637739 (1).jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div> 
-          
-          <div class="marketing">
+        </div>
+    </section>
+<!--home end-->
+
+<!--About start-->
+
+    <section class="about bg-white" id="about">
+       <div class="container-lg py-5">
+            <!--section about heading-->
             <div class="row">
-              <div class="col-lg-3">
-                <img class="rounded-circle m-2" src="img/livingroom-max-vakhtbovych-6527069.jpg" alt="Living room" width="140" height="140">
-                <h2>Living room</h2>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sapiente suscipit dignissimos debitis itaque, quasi vitae eveniet, voluptatibus, repudiandae deleniti voluptatum amet natus quis reprehenderit esse adipisci non odio! Ipsam facilis molestiae iste, molestias velit quisquam rerum dignissimos sit ea, quam mollitia beatae modi sint eum impedit vel optio soluta. Est facilis nesciunt voluptas quo.</p>
-
-                <p>
-                  <a href="#" class="btn btn-secondary">View Details &#187;</a>
-                </p>
-                
-              </div>
-
-              <div class="col-lg-3">
-                <img class="rounded-circle m-2" src="img/bathroom-monstera-6620861.jpg" alt="Bathroom" width="140" height="140">
-                <h2>Bathroom</h2>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sapiente suscipit dignissimos debitis itaque, quasi vitae eveniet, voluptatibus, repudiandae deleniti voluptatum amet natus quis reprehenderit esse adipisci non odio! Ipsam facilis molestiae iste, molestias velit quisquam rerum dignissimos sit ea, quam mollitia beatae modi sint eum impedit vel optio soluta. Est facilis nesciunt voluptas quo.</p>
-
-                <p>
-                  <a href="#" class="btn btn-secondary">View Details &#187;</a>
-                </p>
-
-              </div>
-
-              <div class="col-lg-3">
-                <img class="rounded-circle m-2" src="img/kitchen-cleyder-duque-3637739 (1).jpg" alt="Kitchen" width="140" height="140">
-                <h2>Kitchen</h2>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sapiente suscipit dignissimos debitis itaque, quasi vitae eveniet, voluptatibus, repudiandae deleniti voluptatum amet natus quis reprehenderit esse adipisci non odio! Ipsam facilis molestiae iste, molestias velit quisquam rerum dignissimos sit ea, quam mollitia beatae modi sint eum impedit vel optio soluta. Est facilis nesciunt voluptas quo.</p>
-
-                <p>
-                  <a href="#" class="btn btn-secondary">View Details &#187;</a>
-                </p>
-
-              </div>
-
-              <!--Lisa neljandat samasugust ala siin-->
-              <div class="col-lg-3">
-                <img class="rounded-circle m-2" src="img/features-houzlook-com-3356416 (1).jpg" alt="Dining room" width="140" height="140">
-                <h2>Dining room</h2>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sapiente suscipit dignissimos debitis itaque, quasi vitae eveniet, voluptatibus, repudiandae deleniti voluptatum amet natus quis reprehenderit esse adipisci non odio! Ipsam facilis molestiae iste, molestias velit quisquam rerum dignissimos sit ea, quam mollitia beatae modi sint eum impedit vel optio soluta. Est facilis nesciunt voluptas quo.</p>
-
-                <p>
-                  <a href="#" class="btn btn-secondary">View Details &#187;</a>
-                </p>
-
-              </div>
-
+                <div class="section-heading text-center">
+                    <h2 class="fw-bold mb-5">About me</h2>
+                </div>
             </div>
-          <!--end of marketing area-->
+            <!--section about heading end-->
 
-          <hr>
-          <!--Feature 1 section-->
-          <div class="row">
+            <div class="row">
+                <!--project area start-->
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <h3 class="fs-4 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque assumenda officia dolor, alias possimus voluptates nihil incidunt eaque eos accusamus. Expedita mollitia iure error veritatis, excepturi esse atque nisi quo harum iusto inventore quos molestiae blanditiis, doloribus nihil reprehenderit natus sapiente? Natus ex consectetur laborum sed unde impedit? Enim, quo.</p>
+                    </div>
+
+                    <!--stats start-->
+                    <div class="row text-center text-uppercase my-3">
+                        <div class="col-sm-4">
+                            <div class="stats">
+                                <h4 class="fw-bold fs-1">100</h4>
+                                <p class="text-muted">Projects completed</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="stats">
+                                <h4 class="fw-bold fs-1">50</h4>
+                                <p class="text-muted">Happy Customers</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="stats">
+                                <h4 class="fw-bold fs-1">100%</h4>
+                                <p class="text-muted">Positive reviews</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--stats end-->
+
+                    <!--social media links start-->
+                    <div class="row">
+                        <div class="col-lg-12 d-flex align-items-center">
+                            <a href="#" class="btn btn-primary me-4">Download CV</a>
+
+                            <div class="social-media">
+                                <a href="#" class="text-dark me-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="text-dark me-2"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="text-dark me-2"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--social media links end-->
+
+                </div>
+                <!--project area end-->
+
+
+                <!--progress bar area start-->
+                <div class="col-lg-6">
+                    <div class="skill mt-5 mb-4">
+                        <h3 class="fs-6">HTML</h3>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+
+                    <div class="skill mt-5 mb-4">
+                        <h3 class="fs-6">CSS</h3>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+
+                    <div class="skill mt-5 mb-4">
+                        <h3 class="fs-6">Bootstrap5</h3>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+
+                    <div class="skill mt-5 mb-4">
+                        <h3 class="fs-6">CSS animation</h3>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+
+                </div>
+                <!--progress bar area end-->
+            </div>
+
+        </div>
+   </section>
+
+<!--about end-->
+
+<!--contact start-->
+   <section class="contact" id="contact">
+        <div class="container-lg py-4">
+            <!--contact heading start-->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-heading text-center mb-5">
+                        <h2>Contact Me</h2>
+                    </div>
+                </div>
+            </div>
+            <!--contact heading end-->
+
+            <!--contact area start-->
+            <div class="row">          
+                <!--contact details start-->
+                <div class="col-lg-5">
+                    <!--envelope start-->
+                    <div class="contact-details mb-3 d-flex">
+                        <div class="icon fs-4 text-primary">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    <div class="text ms-3">
+                        <h3 class="fs-5">Email</h3>
+                        <p class="text-muted">mysample@gmail.com</p>
+                    </div>
+                    </div>
+                <!--envelope end-->
+
+                <!---phone start-->
+                <div class="contact-details mb-3 d-flex">
+                        <div class="icon fs-4 text-primary">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                 <div class="text ms-3">
+                    <h3 class="fs-5">Phone</h3>
+                    <p class="text-muted">+123456789</p>
+                    </div>
+                </div>
+                <!--phone end-->
+                    <!-- address start -->
+        <div class="contact-details mb-3 d-flex">
+            <div class="icon fs-4 text-primary">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text ms-3">
+                <h3 class="fs-5">Address</h3>
+                <p class="text-muted">Street, City, Country</p>
+            </div>
+        </div>
+        <!-- address end -->
+            </div>
+
+            <!--contact form start-->
             <div class="col-lg-7">
-              <h2>First Feature Heading <span class="text-muted">It'll blow your mind!</span></h2>
-             
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quasi perspiciatis placeat vitae dicta culpa cupiditate nobis aspernatur aut quae pariatur consectetur aliquam enim similique fuga exercitationem, veniam doloribus accusamus qui. Consequuntur numquam ut atque!</p>
+                <div class="contact-form">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <input type="text" placeholder="Your name" class="form-control form-control-lg fs-6">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="email" placeholder="Your Email" class="form-control form-control-lg fs-6">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12 mt-4">
+                                <textarea rows="5" class="form-control form-control-lg fs-6" placeholder="Enter your message"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12 mt-4">
+                                <button class="btn btn-danger">Submit</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                </div>
+
             </div>
+            <!--contact form end-->
 
-            <div class="col-lg-5">
-              <img src="img/features-houzlook-com-3356416 (1).jpg" alt="dining room" class="img-fluid m-2" style="height: auto; width: 500px;">
+            <!--contact details end-->
+
+            <!--contact area end-->
+        </div>
+
+   </section>
+
+   <footer class="footer py-4 border-top">
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-center text-muted">
+                    Kert Jär. &#169; 2024
+                </p>
             </div>
+        </div>
+    </div>
+   </footer>
 
-          </div> 
-          <hr>
-          <!--end of Feature 1 section-->
-          
-
-          <!--Lisa Feature 2 section siin (las esimene ala võtab vähem ruumi, kui teine)-->                     
-          <div class="row">
-            <div class="col-lg-5">
-              <img src="img/features-houzlook-com-3356416 (1).jpg" alt="dining room" class="img-fluid m-2" style="height: auto; width: 500px;">
-            </div>
-
-            <div class="col-lg-7">
-              <h2>First Feature Heading <span class="text-muted">It'll blow your mind!</span></h2>
-             
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quasi perspiciatis placeat vitae dicta culpa cupiditate nobis aspernatur aut quae pariatur consectetur aliquam enim similique fuga exercitationem, veniam doloribus accusamus qui. Consequuntur numquam ut atque!</p>
-            </div>
-
-          </div>           
-          </div>
-
-      </main>
-
-      <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>Kert Jär. &#169; 2024 <a href="#">Privacy</a> <a href="#">Terms</a></p>
-      </footer>
-      
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
